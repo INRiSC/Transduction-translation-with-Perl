@@ -6,7 +6,7 @@
  
 
 ### Genome
-$DNA_seq = "CATTACGATGCATTGATTTTTCAAAGGAATGTACTATCGAAATCACAAGTCGTGGACTACGGTTTGCAGTGGAGGAATCGCAGTCTTTGCAGGCTCACGCCTTTCTTGATAAGTCGTTGTTTCAAACGTTTAATTTTCAGGGTGATTCAGATGGGGATACATATATGTTCCAGACGATGATTTCACCT";
+$DNA_seq = "#######"; #enter your DNA sequence, single strain
  
 ### Transcription
 
@@ -30,8 +30,8 @@ print "$RNA_seq\n";
 
 ### 3 Frames:
 
-$RNA_seq1 = substr($RNA_seq,0,186);  
-$RNA_seq2 = substr($RNA_seq,1,186);
+$RNA_seq1 = substr($RNA_seq,0,length.$RNA_seq-2);  
+$RNA_seq2 = substr($RNA_seq,1,length.$RNA_seq-1);
 $RNA_seq3 = substr($RNA_seq,2);
 
 ### Translation 1
